@@ -38,6 +38,10 @@
     <driver id="sybase.ase">
       <option name="auto-sync" value="true" />
     </driver>
+    <driver id="mysql.8">
+      <artifact name="MySQL Connector/J 8" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
     <driver id="mysql">
       <remarks>Localhost</remarks>
       <artifact name="MySQL Connector/J" use="true" version="5.1.46" />
@@ -45,7 +49,6 @@
       <option name="auto-commit" value="true" />
       <option name="send-app-info" value="true" />
       <option name="schema-control" value="AUTOMATIC" />
-      <code-style-scheme-name>Default</code-style-scheme-name>
     </driver>
     <driver id="mariadb">
       <artifact name="MariaDB Connector J" use="true" />
@@ -58,12 +61,13 @@
       <option name="send-app-info" value="true" />
     </driver>
     <driver id="postgresql">
-      <artifact name="PostgreSQL" use="true" version="42.2.2" />
+      <artifact name="PostgreSQL" use="true" version="42.2.5" />
       <option name="auto-sync" value="true" />
       <option name="schema-control" value="MANUAL" />
       <option name="auto-commit" value="true" />
       <option name="send-app-info" value="true" />
-      <code-style-scheme-name>Default</code-style-scheme-name>
+      <option name="format-sources-on-sync" value="true" />
+      <option name="source-loading" value="USER_SOURCES" />
     </driver>
     <driver id="redshift">
       <artifact name="Redshift" use="true" />
@@ -88,7 +92,6 @@
       <option name="auto-commit" value="true" />
       <option name="send-app-info" value="true" />
       <option name="schema-control" value="AUTOMATIC" />
-      <code-style-scheme-name>Default</code-style-scheme-name>
     </driver>
     <driver id="exasol">
       <artifact name="Exasol" use="true" />
@@ -100,6 +103,24 @@
     </driver>
     <driver id="cassandra">
       <artifact name="Cassandra" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="vertica">
+      <artifact name="Vertica" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="hive">
+      <artifact name="Hive" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="greenplum">
+      <artifact name="PostgreSQL" use="true" />
+      <option name="auto-sync" value="true" />
+      <option name="schema-control" value="MANUAL" />
+      <option name="send-app-info" value="false" />
+    </driver>
+    <driver id="snowflake">
+      <artifact name="Snowflake" use="true" />
       <option name="auto-sync" value="true" />
     </driver>
   </component>
